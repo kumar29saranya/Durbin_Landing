@@ -1,0 +1,314 @@
+/*--------------------------------- FOOTER BUTTONS---------------------------------------------*/
+.f-btn1{
+    text-align: right;
+  }
+  .f-btn2{
+    text-align: left;
+  }
+  .explore-btn {
+    float:left;
+    padding: 0.4rem 2rem;
+    font-size: 20px;
+    color: #1DD9B3;
+    background: #FFFFFF;
+    border: 2px solid #1DD9B3;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+    margin: 2rem 0rem;
+  }
+  
+  .explore-btn:hover {
+    color: #ffffff;
+    background-color: #019298;
+    border: 2px solid #019298;
+    transform: scale(1.05) ;
+  }
+  #content-btn {
+    
+    color: #ffffff;
+    margin-left: 0px;
+    padding: 0.4rem 2rem;
+    font-size: 20px;
+    background: #1DD9B3;
+    border: 2px solid #1dd9b3;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+  }
+  #content-btn:hover {
+    transform: scale(1.2) ;
+    background-color: white;
+    border: 2px solid #019298;
+    color: #019298;
+  }
+  /*------------------------------------------------FOOTER---------------------------------------------------------*/
+  .horizontal-line{
+    text-align: center;
+    height: 20%;
+    
+  }
+  .division{
+    border-top: 10px dotted #1dd9b3;
+    height:5px;
+    width: 80%;
+    margin:0% auto 10% auto;
+    animation-name: line;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    animation-timing-function: ease-in-out ;
+    }
+  .circle-left{
+  
+    opacity: 0.7;
+    position: relative;
+    width: 50px;
+    animation-name: example1a;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    animation-timing-function: ease-in-out ;
+  }
+  
+  @keyframes example1a {
+    0%   { transform: rotate(360deg) scale(0.5); opacity:1;left:0px; top:0px;}
+    100%  { opacity:1;left:0px; top:0px;}
+  }
+  .footer-pt1{
+    text-align: center;
+    padding: 0% 0% 10% 0%;
+    font-size: 20px;
+  }
+  .footer-pt1-text
+  {
+    font-size: 50px;
+    color: #019298;
+    font-weight: 500;
+    padding: 0% 0% 2% 0%;
+  }
+  /*-------------------------------------------BIG FOOTER-----------------------------------------*/
+  .footer-pt2{
+    background-color: #1DD9B3;
+    align-items: flex-start;
+    padding: 5rem 6rem;
+  }
+  .about-durbin{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    padding-right: 5%;
+    padding-left:0;
+  }
+  .about-durbin p{
+    margin:0;
+  }
+  .footer-list{
+    text-align: justify;
+    padding-top: 1%;
+    padding-left: 9.5%;
+    color: #373D3B;
+    padding-right:0;
+  }
+  .footer-list p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .footer-list  ul{
+    padding:0px;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .footer-list li{
+    padding-top: 30%;
+  }
+  .footer-link{
+    color: #373D3B;
+    transition: 0.3s;
+  
+  }
+  .footer-link:hover{
+    color: #019298;
+    transform: scale(1.1);
+  }
+  .contact{
+    padding:1% 0% 0% 10%;
+    font-weight: 500;
+  }
+  .contact-head{
+    color: #373D3B;
+    font-size: 20px;
+  }
+  .reach{
+    padding: 12% 0%;
+    font-size: 15px;
+    color: #373D3B;
+  }
+  .reach-link{
+    color: white;
+    transition: 0.3s;
+  }
+  .reach-link:hover{
+    text-decoration: none;
+    color:#019298;
+    
+  
+  }
+  .white-line{
+    width: 100%;
+    border: 1px solid #ffffff;
+    color: white;
+    opacity:0.9;
+    border-radius: 10px;
+  }
+  .social{
+    color: white;
+    font-size: 20px;
+    padding:12% 0% 3% 0%;
+    margin:0px;
+  }
+  
+  .social-logo{
+    width: 20%;
+    padding:0px;
+    transition: 0.3s;
+  }
+  .disc-logo{
+    width: 25%;
+    transition: 0.3s;
+  
+  }
+  .social-logo:hover{
+    transform: scale(0.97);
+    filter: invert(92%) sepia(14%) saturate(1301%) hue-rotate(20deg) brightness(104%) contrast(102%);
+  }
+  
+  /*--------------------------------------------SMALL FOOTER---------------------------------------------------*/
+  .footer-pt3{
+    width: 100%;
+    text-align: center;
+    background-color: #454545;
+    margin:0;
+    padding: 2rem 5rem;
+    font-size: 20px;
+  }
+  .address{
+    text-align: left;
+    font-size: 14px;
+    padding-left: 0%;
+    display: flex;
+    align-items: center;
+  }
+  .location-icon{
+    width:70%;
+  }
+  .location-address{
+    width: 55%;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .small-footer-link{
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .small-footer-link:hover{
+    text-decoration: none;
+    color: #64bcf4;
+    transform: scale(1.02);
+  }
+  .terms{
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    padding-right: 0%;
+    align-items: center;
+  }
+  .footer-small{
+    padding-bottom: 2%;
+  }
+  .footer-text{
+    display: inline;
+    padding-left: 5%;
+    
+  }
+  /*-------------------------------FOOTER RESPONSIVE--------------------------------------------------*/
+  @media only screen and (max-width:992px){
+    .f-btn1{
+      text-align: center;
+      padding-bottom: 5%;
+    }
+    .f-btn2{
+      text-align: center;
+    }
+    .footer-list{
+      padding: 10% 0% 10% 0%;
+    }
+    .footer-list li {
+      padding-top: 20%;
+  }
+    .contact{
+      padding-left: 0px;
+      text-align: center;
+    }
+    .contact-head{
+      font-size: 30px;
+    }
+    .reach{
+      padding: 3% 0%;
+      font-size: 20px;
+      margin:0;
+      
+    }
+    .footer-pt3{
+      padding: 1% 5%;
+    }
+    .terms{
+      padding: 5% 0px;
+    }
+    .social{
+      padding: 3% 0% 1% 0%;
+  }
+    .social-logo{
+      width: 10%;
+    }
+    .disc-logo{
+      width: 12%;
+    
+    }
+  }
+  @media only screen and (max-width:640px){
+    .footer-pt1{
+      padding: 0% 5% 10% 5%;
+    }
+    #footer2{
+      align-items: flex-start!important;
+    }
+    .footer-pt2{
+      padding: 15%;
+      
+    }
+    .about-durbin{
+      padding: 0;
+    }
+    
+    
+   
+    .footer-pt3{
+      padding: 2% 5%;
+    }
+    .address{
+      font-size: 10px;
+      padding: 0px 0px;
+    }
+    .terms{
+      font-size: 10px;
+      padding: 10% 0px;
+    }
+    .footer-small {
+        padding-bottom: 5%;
+    }
+    
+  }

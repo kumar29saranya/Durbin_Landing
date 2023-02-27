@@ -1,0 +1,248 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--TextColor);
+    position: relative;
+    z-index: -500;
+    overflow-x :hidden; 
+
+  }
+
+:root {
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #ffffff;
+    --TextColor: #555555;
+    --darkTwo: #45424b;
+    --Navbar: #1dd9b3;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  
+/*--------------------------------------------------------ABOUT US---------------------------------------------------------------->*/
+.about-us{
+    width: 90%;
+    margin: 0% 5%;
+     
+}
+
+#about{
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+}
+.row{
+    justify-content: space-evenly;
+    margin: 0px;
+    align-items: center;
+}
+.hidden{
+  display: none;
+}
+.text-col{
+    
+    padding: 0px 20px 0px 0px;
+    align-items: center;
+    text-align: justify;
+}
+.img-col{
+    flex-basis: 50%;
+    padding: 0px;
+    align-items: center;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.container{
+  padding: 0px;
+  margin:0px;
+}
+.circle-left{
+
+    opacity: 0.7;
+    position: relative;
+    width: 50px;
+    animation-name: example1a;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    animation-timing-function: ease-in-out ;
+  }
+  
+  @keyframes example1a {
+    0%   { transform: rotate(360deg) scale(0.5); opacity:1;left:0px; top:0px;}
+    100%  { opacity:1;left:0px; top:0px;}
+  }
+  .cir-r{
+    
+    text-align: right;
+  }
+  .circle-right{
+
+    opacity: 0.7;
+    position: relative;
+    width: 50px;
+    animation-name: example1b;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    animation-timing-function: ease-in-out ;
+  }
+  
+  @keyframes example1b {
+    0%   { transform: rotate(360deg) scale(0.5); opacity:1;right:0px; top:0px;}
+    100%  { opacity:1;right:0px; top:0px;}
+  }
+  .line-pattern{
+    z-index: -2;
+    opacity: 0.7;
+    width: 500px;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    animation-timing-function: ease-in-out ;
+  }
+  
+  @keyframes example2 {
+    0%   { transform: scaleX(0.5);left:250px; top:0px;}
+    50%   { transform: scale(1);left:50px; top:0px;}
+    100%  {transform: scaleX(0.5); left:-120px; top:0px;}
+  }
+.about-img{
+    width:90%;    
+}
+
+.small-text{
+    padding:  15px 0px 25px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.text-head{
+  font-size: 30px;
+  margin: 0px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #019298;
+ 
+}
+#about-btn{
+  display: flex;
+  
+}
+  
+.curve-line{
+  text-align: center;
+}
+.curve{
+  
+  height: 20rem;
+}
+@keyframes line {
+  0%   { transform: scale(0.98); opacity:1;left:0px; top:0px;}
+  100%  { opacity:1;left:0px; top:0px;}
+}
+@media only screen and (max-width:1007px) {
+  .about-us{
+    margin-top: 10%;
+  }
+  .img-col{
+    text-align: center;
+    justify-content: center;
+  }
+  .text-col{
+    padding: 0px;
+  }
+  .text-head{
+    text-align: center;
+    margin-top: 0px;
+  }
+  .line-pattern{
+    display: none;
+  }
+  
+  #about-btn{
+    
+    justify-content: center;
+  }
+  .hidden{
+    display: block;
+  }
+  .visible{
+    display: none;
+  }
+  #btn-explore{
+    justify-content: space-evenly;
+    margin: auto;
+    z-index: -2;
+    animation: expand ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+    animation-timing-function: ease-in-out;
+    
+    font-size: 2em;
+  }
+  
+ 
+  @keyframes expand {
+    0% {transform: scale(0.78);}
+    100%{transform: scale(0.8);} 
+  }
+
+  
+  .small-text{
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+  }
+  .text-col{
+  display: grid;
+  place-items: center;
+  }
+  .text-head
+  { padding-top: 20px;
+    font-size: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    width: 0;
+    animation: typing 4s steps(30, end) infinite forwards;
+  }
+    
+  @keyframes typing {
+    from { width: 0;}
+    to { width: 60% ;}
+  }
+}
+@media only screen and (max-width:640px) 
+{
+   
+    #circle-about{
+      transform: scale(0.9);
+      opacity: 0.7;
+      z-index: -2;
+      position: relative;
+      width: 50px;
+      animation-name: example4 !important;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse; 
+      animation-timing-function: ease-in-out ;
+    }
+    
+    @keyframes example4 {
+      0%   { transform: rotate(180deg); opacity:1;left:0px; top:0px;}
+      100%  { opacity:1;left:0px; top:0px;}
+    }
+    
+    
+}
+
+   
+

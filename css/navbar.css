@@ -1,0 +1,258 @@
+:root {
+    --mainColor: #62bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #ffffff;
+    --TextColor: #555555;
+    --darkTwo: #45424b;
+    --Navbar: #1dd9b3;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    color: var(--TextColor);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+.nav-bar{
+  width: 90%;
+  margin:2% 5% 2% 5%;
+}
+  .nav-bar .content{
+    display: flex;
+    align-items: center;
+    margin:0;
+    justify-content: space-between;
+  }
+  nav .content .links{
+    
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.5s ease;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+  }
+  
+  .navitem, .prod-list-item{
+    list-style: none;
+    line-height: 70px;
+  }
+  .prod-link,.navlink, #product-feature{
+    color: var(--Navbar);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 27px;
+    transition: all 0.5s ease;
+  }
+  #product-feature{
+    display: none;
+  }
+  .content .links  :hover{
+    color: var(--hoverColor);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+  
+    .menu-icon{
+    display: none;
+  }
+  
+    #navigation-bar input[type="checkbox"]{
+    display: none;
+  }
+  #product-link{
+    padding-left: 0px;
+}
+
+  /*--------------------------------------------------- Dropdown Menu code start------------------------------------------------ */
+.product-list{
+  position: absolute;
+  background: var(--backgroundColor);
+  top: 0px;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.prod-item:hover > #prod-list{
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.arrowdown{
+  margin-left: 5px;
+}
+.desktop-link:hover > .arrowdown{
+  transform: rotate(90deg) scale(.98);
+  padding-left: 0px;
+  margin-bottom: 3px;
+  transition: all 0.3s ease-in-out;
+  
+}
+.prod-link{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.prod-list-item{
+  position: relative;
+}
+.prod-list-item:hover .product-list{
+  top: 0;
+}
+
+.btn-no-background {
+  margin-left: 10px;
+  padding: 0.4rem 2rem;
+  color: var(--Navbar) !important;
+  border: 1px solid #1dd9b3;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn-no-background:hover {
+  box-shadow: 0 19px 38px rgba(29, 217, 179, 0.3),
+    0 15px 12px rgba(29, 217, 179, 0.22);
+  transform: scale(1.2) !important;
+}
+.btn-w-background {
+  color: #ffffff!important;
+  margin-left: 10px;
+  padding: 0.4rem 2rem;
+  background: #1DD9B3!important;
+  border: 1px solid #1dd9b3;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------Responsive(nav) code start -----------------------------------------*/
+@media screen and (max-width:1250px){
+    .nav-bar{
+    max-width: 100%;
+    
+  }
+  
+  .navlink, .prod-link{
+    padding: 8px 11px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  
+    .menu-icon{
+    display: inline;
+    float: right;
+  }
+    #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  .hamburger-menu{
+    margin-top: 50%;
+    z-index: 50;
+    position: relative
+  }
+  .content{
+    margin-top: 50%;
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background-color: #fdfdfd;
+    height: 100%;
+    width: 100%;
+    top: 77px;
+    right: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+  }
+  .links{
+    padding: 2% 5% 2% 5%;
+    
+  }
+  nav #show-menu:checked ~ .content .links{
+    right: 0%;
+    top:0%;
+    background: linear-gradient(90deg, rgba(197,255,243,1) 0%, rgba(255,255,255,1) 10%, rgba(250,254,253,1) 85%);
+  }
+  
+  .navitem, .prod-list-item{
+    margin: 15px 20px;
+  }
+  .navlink, .prod-link, #product-feature{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .desktop-link{
+    display: none;
+  }
+  .btn-w-background {
+    text-align: left;
+    
+    margin: 0;
+  }
+  .btn-no-background{
+    text-align: left;
+    margin: 0;
+  }  
+  
+  .product-list{
+    position:static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+/*-------------------------------------------------DROPDOWN-RESPONSIVE-----------------------------------------*/
+  #show-features:checked ~  .product-list{
+    display: block;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+  #show-features:checked ~  #product-feature{
+    color: #64bcf4;
+    padding-bottom: 0px;
+    transition: all 0.5s ease;
+  }
+  #show-features:not(checked) ~  #product-feature{
+    transform: scale(1);
+  }
+  #rightarrow{
+    margin-left: 5px;
+  }
+  #show-features:checked ~  #product-feature #rightarrow{
+    transform: rotate(90deg) scale(0.98);
+    transition: all 0.3s ease-in-out;
+    margin-left: 0px;
+    padding-bottom: 5px;
+  }
+  .content .links  :hover{
+    color: #1DD9B3;
+  }
+  
+}
+
